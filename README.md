@@ -23,7 +23,7 @@ To be able to interact with the code without any limitation, you will require a 
 #### **Anaconda**
 Having previously installed [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html), and knowing that main repository version utilises Python 3.10 as main release, we will need to run the following command within a Terminal shell in order for our environment to be available for use:
 ```bash
-conda create --name myenv python --no-default-packages --yes
+conda create --name myenv python --no-default-packages --yes python=3.10
 ```
 
 To activate the virtual environment, the following command should be executed:
@@ -40,7 +40,7 @@ poetry install
 #### **Python**
 To create a new Python virtual environment we will need to run the following command:
 ```bash
-python3.8 –m venv myenv
+python3.10 –m venv myenv
 ```
 
 If your env is not activated, you need to activate it.
