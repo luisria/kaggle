@@ -23,12 +23,18 @@ To be able to interact with the code without any limitation, you will require a 
 #### **Anaconda**
 Having previously installed [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html), and knowing that main repository version utilises Python 3.10 as main release, we will need to run the following command within a Terminal shell in order for our environment to be available for use:
 ```bash
-conda create -n myenv python=3.10 --yes --file requirements.txt
+conda create --name myenv python --no-default-packages --yes
 ```
 
 To activate the virtual environment, the following command should be executed:
 ```bash
 conda myenv activate
+```
+
+Then we will need to install poetry in order for the correct dependencies to be later on installed
+```bash
+pip install poetry
+poetry install
 ```
 
 #### **Python**
@@ -42,15 +48,13 @@ If your env is not activated, you need to activate it.
 source myenv/bin/activate
 ```
 
-In order to include the required packages within the environment the following command should be executed:
+Then we will need to install poetry in order for the correct dependencies to be later on installed
 ```bash
-pip install –r requirements.txt
+pip install poetry
+poetry install
 ```
 
-If the code uses a new package that is not included, please feel free to include it onto the requirements.txt file.
-
-## **Poetry**
-**PENDING**
+If the code uses a new package that is not included, please feel free to include it onto the pyproject.toml file.
 
 ## Code Structure <a name="code_struct"></a>
 ### kaggle
