@@ -1,7 +1,13 @@
+# Extra FS HFS+ attributes files
 ._*
 **/._*
 **/**/._*
 **/**/**/._*
 **/**/**/**/._*
 
+# Poetry file
 poetry.lock
+
+# Avoid VBBDAI huge CSV files
+competitions/vbbdai_challenge/data/train.csv
+competitions/vbbdai_challenge/data/test.csv
